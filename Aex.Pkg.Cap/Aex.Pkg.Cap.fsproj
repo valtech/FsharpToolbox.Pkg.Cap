@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <!-- SourceLink configuration -->
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="5.1.4" />
+    <PackageReference Include="DotNetCore.CAP.AzureServiceBus" Version="5.1.4" />
+    <PackageReference Include="DotNetCore.CAP.PostgreSql" Version="5.1.4" />
+    <PackageReference Include="FsharpToolbox.Pkg.FpUtils" Version="1.0.0" />
+    <PackageReference Include="FsharpToolbox.Pkg.Logging" Version="1.0.0" />
+    <PackageReference Include="FsharpToolbox.Pkg.Serialization" Version="1.0.0" />
+    <PackageReference Include="FsharpToolbox.Pkg.Communication.Core" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Outbox\Event.fs" />
+    <Compile Include="Outbox\ServiceCollectionExtensions.fs" />
+    <Compile Include="Outbox\TransactionalOutbox.fs" />
+    <Compile Include="Outbox\MaybeTransaction.fs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+mode: Mainline
+# next-version: 0.1.0 # only use initially
+branches: {}
+ignore:
+  sha: []
+merge-message-formats: {}
